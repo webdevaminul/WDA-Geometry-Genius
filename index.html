@@ -7,11 +7,253 @@
     <!-- Tailwind CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <header class="container mx-auto rounded-xl m-6 overflow-hidden">
+  <body class="m-6">
+    <!-- Header -->
+    <header class="container mx-auto rounded-xl overflow-hidden">
       <h1 class="text-2xl text-blue-950 bg-blue-50 font-bold px-4 py-2">
         WDA <br /><span class="font-normal text-xl">Geomatry Genius</span>
       </h1>
     </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto grid grid-cols-12 gap-6 mt-6">
+      <!-- Area Section -->
+      <section class="col-span-9 grid grid-cols-12 gap-6">
+        <!-- Triangle -->
+        <div class="col-span-4 border border-blue-100 rounded-xl text-center text-blue-950 p-6">
+          <figure class="h-40">
+            <img src="/assets/triangle.png" alt="Triangle" loading="lazy" class="mx-auto h-full" />
+          </figure>
+
+          <h2 class="text-2xl font-semibold mt-4">Triangle</h2>
+
+          <p class="mt-2">Area (A) = 0.5 x b x h</p>
+
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="b"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="h"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+          </div>
+
+          <button
+            class="w-full bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold text-blue-50 cursor-pointer mt-6 p-3"
+          >
+            Calculate
+          </button>
+        </div>
+
+        <!-- Rectangle -->
+        <div class="col-span-4 border border-blue-100 rounded-xl text-center text-blue-950 p-6">
+          <figure class="h-40">
+            <img
+              src="/assets/rectangle.png"
+              alt="Rectangle"
+              loading="lazy"
+              class="mx-auto h-full"
+            />
+          </figure>
+
+          <h2 class="text-2xl font-semibold mt-4">Rectangle</h2>
+
+          <p class="mt-2">Area (A) = w x l</p>
+
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="w"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="l"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+          </div>
+
+          <button
+            class="w-full bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold text-blue-50 cursor-pointer mt-6 p-3"
+          >
+            Calculate
+          </button>
+        </div>
+
+        <!-- Parallelogram -->
+        <div class="col-span-4 border border-blue-100 rounded-xl text-center text-blue-950 p-6">
+          <figure class="h-40">
+            <img
+              src="/assets/parallelogram.png"
+              alt="Parallelogram"
+              loading="lazy"
+              class="mx-auto h-full"
+            />
+          </figure>
+
+          <h2 class="text-2xl font-semibold mt-4">Parallelogram</h2>
+
+          <p class="mt-2">Area (A) = b x h</p>
+
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="b"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="h"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+          </div>
+
+          <button
+            class="w-full bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold text-blue-50 cursor-pointer mt-6 p-3"
+          >
+            Calculate
+          </button>
+        </div>
+
+        <!-- Rhombus -->
+        <div class="col-span-4 border border-blue-100 rounded-xl text-center text-blue-950 p-6">
+          <figure class="h-40">
+            <img src="/assets/rhombus.png" alt="Rhombus" loading="lazy" class="mx-auto h-full" />
+          </figure>
+
+          <h2 class="text-2xl font-semibold mt-4">Rhombus</h2>
+
+          <p class="mt-2">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="d₁"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="d₂"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+          </div>
+
+          <button
+            class="w-full bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold text-blue-50 cursor-pointer mt-6 p-3"
+          >
+            Calculate
+          </button>
+        </div>
+
+        <!-- Pentagon -->
+        <div class="col-span-4 border border-blue-100 rounded-xl text-center text-blue-950 p-6">
+          <figure class="h-40">
+            <img src="/assets/pentagon.png" alt="Pentagon" loading="lazy" class="mx-auto h-full" />
+          </figure>
+
+          <h2 class="text-2xl font-semibold mt-4">Pentagon</h2>
+
+          <p class="mt-2">Area (A) = 0.5 x p x b</p>
+
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="p"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="b"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+          </div>
+
+          <button
+            class="w-full bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold text-blue-50 cursor-pointer mt-6 p-3"
+          >
+            Calculate
+          </button>
+        </div>
+
+        <!-- Ellipse -->
+        <div class="col-span-4 border border-blue-100 rounded-xl text-center text-blue-950 p-6">
+          <figure class="h-40">
+            <img src="/assets/ellipse.png" alt="Ellipse" loading="lazy" class="mx-auto h-full" />
+          </figure>
+
+          <h2 class="text-2xl font-semibold mt-4">Ellipse</h2>
+
+          <p class="mt-2">Area (A) = &pi; x a x b</p>
+
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="a"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <input
+                type="number"
+                placeholder="b"
+                class="w-24 bg-blue-50 border border-blue-100 rounded-md outline-blue-300 p-2"
+              />
+              <span>cm</span>
+            </div>
+          </div>
+
+          <button
+            class="w-full bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold text-blue-50 cursor-pointer mt-6 p-3"
+          >
+            Calculate
+          </button>
+        </div>
+      </section>
+
+      <!-- Result Section -->
+      <section class="col-span-3 border border-blue-100 rounded-xl p-4">
+        <p
+          class="text-center text-xl text-blue-950 font-semibold border-b-2 border-dashed border-blue-100 pb-2"
+        >
+          Area Calculation
+        </p>
+      </section>
+    </main>
   </body>
 </html>
